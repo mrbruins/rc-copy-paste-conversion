@@ -6,11 +6,11 @@
 
 ```mermaid
 flowchart TD
-  A[Monolithic command file\nsrc/copy-clean.tsx] --> B[Low testability]
+  A[Monolithic command file<br>src/copy-clean.tsx] --> B[Low testability]
   B --> C[No automated tests]
   C --> D[Regression risk in transforms]
 
-  E[Clipboard loading gate\nisLoading={!clipboardText}] --> F[Empty clipboard path]
+  E[Clipboard loading gate<br>isLoading={!clipboardText}] --> F[Empty clipboard path]
   F --> G[Perceived loading hang]
 
   H[Regex-based sanitizers] --> I[Edge-case text corruption]
